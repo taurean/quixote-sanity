@@ -8,6 +8,7 @@ export default {
     {
       title: 'Internal Document Name',
       name: 'internalDocumentName',
+      validation: Rule => Rule.required(),
       type: 'string'
     },
     {
@@ -18,6 +19,7 @@ export default {
     {
       title: 'Slug',
       name: 'slug',
+      validation: Rule => Rule.required(),
       type: 'slug',
       options: {
         source: 'internalDocumentName',
@@ -27,6 +29,7 @@ export default {
     {
       title: 'Photograph',
       name: 'photo',
+      validation: Rule => Rule.required(),
       type: 'image',
       options: {
         metadata: ['exif', 'location', 'palette'],
@@ -37,21 +40,25 @@ export default {
     {
       title: 'What is the focal length?',
       name: 'focalLength',
+      validation: Rule => Rule.required(),
       type: 'number'
     },
     {
       title: 'What is the aperture?',
       name: 'aperture',
+      validation: Rule => Rule.required(),
       type: 'number'
     },
     {
       title: 'What is the sensor sensitivity?',
       name: 'iso',
+      validation: Rule => Rule.required(),
       type: 'number'
     },
     {
       title: 'What is the sensor size?',
       name: 'sensorSize',
+      validation: Rule => Rule.required(),
       type: 'string',
       options: {
         list: [ 'Full Frame', 'APS-C', 'Micro 4/3', 'Mobile'],
