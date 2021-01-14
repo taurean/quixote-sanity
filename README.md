@@ -10,11 +10,11 @@ Now you can do the following things:
 
 
 ## Common commands
+- `sanity start` - run your studio
+- `sanity deploy` - deploy changes made to sanity studio and data schema
 - `sanity docs` - opens documentation
 - `sanity manage` - opens project settings in a browser
 - `sanity help` - explore the CLI manual
-- `sanity start` - run your studio
-- `sanity deploy` - deploy changes made to sanity studio and data schema
 
 
 ## Common Docs Pages

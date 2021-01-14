@@ -1,12 +1,18 @@
 export default {
-  title: "Developer Tips",
-  name: "developerTip",
+  title: "Journal Entry",
+  name: "journal",
   type: "document",
   fields: [
     {
       title: 'Is this ready to be public?',
       name: 'published',
       type: 'boolean'
+    },
+    {
+      title: 'Journal Entry Content', 
+      name: 'content',
+      type: 'array', 
+      of: [{type: 'block'}]
     },
     {
       title: 'Slug',
