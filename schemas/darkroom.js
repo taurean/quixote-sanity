@@ -15,10 +15,27 @@ export default {
       name: 'photo',
       validation: Rule => Rule.required(),
       options: {
-        metadata: ['exif', 'location', 'palette'],
+        metadata: ['palette'],
         storeOriginalFilename: false,
         hotspot: true // <-- Defaults to false
       },
+    },
+    {
+      type: 'string',
+      title: 'Describe the image',
+      name: 'imageAlt',
+      validation: Rule => Rule.required(),
+    },
+    {
+      type: 'string',
+      title: 'Caption the image',
+      name: 'imageCaption',
+      validation: Rule => Rule.required(),
+    },
+    {
+      type: 'geopoint',
+      title: 'Where was this taken?',
+      name: 'geoLocation'
     },
     {
       type: 'number',
