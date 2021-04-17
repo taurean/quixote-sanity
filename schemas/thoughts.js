@@ -12,7 +12,7 @@ export default {
     {
       type: 'string',
       title: 'Title',
-      name: 'ThoughtTitle',
+      name: 'title',
       validation: Rule => Rule.required(),
     },
     {
