@@ -49,7 +49,7 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      type: 'number',
+      type: 'string',
       title: 'What is the shutter speed?',
       name: 'shutterSpeed',
       validation: Rule => Rule.required(),
