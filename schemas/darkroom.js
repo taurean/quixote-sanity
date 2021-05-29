@@ -30,7 +30,6 @@ export default {
       type: 'string',
       title: 'Caption the image',
       name: 'imageCaption',
-      validation: Rule => Rule.required(),
     },
     {
       type: 'geopoint',
@@ -47,6 +46,12 @@ export default {
       type: 'number',
       title: 'What is the aperture?',
       name: 'aperture',
+      validation: Rule => Rule.required(),
+    },
+    {
+      type: 'number',
+      title: 'What is the shutter speed?',
+      name: 'shutterSpeed',
       validation: Rule => Rule.required(),
     },
     {
